@@ -1,0 +1,48 @@
+<html dir="ltr" lang="en"><head>
+    <meta charset="utf-8">
+    <title>Noah Weather Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="src/css/main.css">
+</head>
+<body>
+
+    <div id="wrapper">
+        <h1>Noah Weather App</h1>
+        <h2>Instructions</h2>
+        <h3>Basic Usage</h3>
+        <p>To see upcoming weather straight from <a href="https://www.weather.gov/">Weather.gov</a> (i.e., <a href="https://www.noaa.gov/">NOAA</a>), either:</p>
+
+        <ul>
+            <li>type in the coordinates (<code>longitude, latitude</code>) you want to see the weather for into the coordinates textbox below, or</li>
+            <li>press the <span class="literal">Use Browser Coordinates</span> button and allow the page to access your location to put your general coordinates in the textbox.</li>
+        </ul>
+
+        <p>When the textbox contains valid longitude and latitude coordinates, click <span class="literal">Submit Coordinates</span> to see the weather.</p>
+
+        <h3>Saving Coordinates</h3>
+        <p>To save your coordinates for future use, make sure they are entered properly into the coordinates box, press <span class="literal">Save These Coordinates</span>, and then bookmark the page after it reloads. Then every time you use the bookmark, the coordinates you "saved" will be automatically loaded into the coordinates textbox for you.</p>
+
+        <h3>About Letting Your Browser Access Your Location</h3>
+        <p>This feature uses your IP address to determine your general location. If you have your WiFi on, any WiFi hotspots around you will also probably be used to get a much more exact location. If you don't want to send Weather.gov your exact location (which really is unnecessary anyway), keep your WiFi off when you press the <span class="literal">Use Browser Coordinates</span> button. More information about how the Firefox browser determines your location when you allow it to is found <a href="https://support.mozilla.org/en-US/kb/does-firefox-share-my-location-websites">here</a>. Please note that your coordinates are not saved by this app in any way, although your IP address and coordinates may be saved by Repl.it and/or Weather.gov, according to their privacy policies on user data retention.</p>
+
+        <p>This app uses (will use) the US cities database from <a href="https://simplemaps.com/data/us-cities">simplemaps.com/data/us-cities</a></p>
+
+        <h2>Get Your Forecast</h2>
+        <p><strong>Coordinates</strong><br><input type="text" id="coordinates-input"></p>
+
+        <button id="coordinates-button">Submit Coordinates</button>
+
+        <button id="get-coordinates-button">Use Browser Coordinates</button>
+
+        <button id="save-coordinates-button">Save These Coordinates</button>
+
+        <div id="forecast-meta"><span style="color: #666;">Forecast Meta Information</span></div>
+        <div id="forecast"><span style="color: #666;">Forecast</span></div>
+    </div>
+
+
+
+<script src="src/js/temp.js"></script>
+
+</body></html>
